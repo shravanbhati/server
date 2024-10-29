@@ -1,4 +1,5 @@
-export const quizData=[{
+window.quizData=[
+{
     question:" _______ 、えいがをみにいきませんか？",
     a:"ゆうべ",
     b:"きのう",
