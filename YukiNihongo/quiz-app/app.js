@@ -1,4 +1,4 @@
-import { quizData } from './server/main/YukiNihongo/quiz-app/quizData.js';  
+const quizData = window.quizData; 
 
 const quiz=document.getElementById("quiz");
 const countQuestion=document.getElementById("count-question");
