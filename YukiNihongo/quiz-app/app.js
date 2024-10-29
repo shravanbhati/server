@@ -1,13 +1,7 @@
-const quizData = window.quizData; 
 
-if (!window.quizData) {
-    console.error("Quiz data not loaded.");
+if (typeof quizData === 'undefined') {
+    console.error("Quiz data not loaded. Ensure the correct quizData.js file is included.");
 } else {
-    // Proceed with loading quiz
-    const quizData = window.quizData;
-    loadQuiz(); // Start quiz loading
-}
-
 const quiz=document.getElementById("quiz");
 const countQuestion=document.getElementById("count-question");
 const totalNumberofQuestion=document.getElementById("total-num-que");
@@ -164,4 +158,7 @@ const showQuizSummary = () => {
     summaryContainer.style.display = "block";
 };
 
+
+
 loadQuiz();
+}
