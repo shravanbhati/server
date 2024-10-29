@@ -14,6 +14,7 @@ const submiteQuiz=document.getElementById("submite");
 const resultEl=document.getElementById("result");
 const scoreEl=document.getElementById("score");
 
+
 let currentQtn=0;
 let answerd=0;
 
@@ -142,7 +143,7 @@ const showQuizSummary = () => {
         
         // Set the HTML for this question item with conditional styling and detailed answer data
         questionItem.innerHTML = `
-            <p style="color: black;">Q${index + 1}: ${item.question}</p>
+            <p style="color: var(--bodyBg); font-weight: 600;">Q${index + 1}: ${item.question}</p>
             <p style="color: green;">Correct Answer: <span class="correct-answer">${item.correctAnswer} - ${correctAnswerText}</span></p>
             <p style="color: ${item.userAnswer === item.correctAnswer ? 'green' : 'red'};">
                 Your Answer: <span class="${userAnswerClass}">${item.userAnswer} - ${userAnswerText}</span>
