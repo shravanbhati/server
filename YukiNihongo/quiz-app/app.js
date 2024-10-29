@@ -1,5 +1,13 @@
 const quizData = window.quizData; 
 
+if (!window.quizData) {
+    console.error("Quiz data not loaded.");
+} else {
+    // Proceed with loading quiz
+    const quizData = window.quizData;
+    loadQuiz(); // Start quiz loading
+}
+
 const quiz=document.getElementById("quiz");
 const countQuestion=document.getElementById("count-question");
 const totalNumberofQuestion=document.getElementById("total-num-que");
