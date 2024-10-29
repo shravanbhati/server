@@ -1,4 +1,4 @@
-import { quizData } from './quizData.js';  
+import { quizData } from 'https://raw.githubusercontent.com/shravanbhati/server/main/YukiNihongo/quiz-app/quizData.js';  
 
 const quiz=document.getElementById("quiz");
 const countQuestion=document.getElementById("count-question");
